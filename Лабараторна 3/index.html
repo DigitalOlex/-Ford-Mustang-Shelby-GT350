@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історія Ford Mustang Shelby GT350</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2em;
+            color: white;
+            background: linear-gradient(90deg, white 50%, #007BFF 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            display: none;
+        }
+        img.active {
+            display: block;
+        }
+        .image-controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-controls button {
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .image-controls button:hover {
+            background-color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Історія Ford Mustang Shelby GT350</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Ford Mustang Shelby GT350 (1965)</h2>
+
+            <div class="image-gallery">
+                <div class="image-controls">
+                    <button onclick="showImage(0)">1</button>
+                    <button onclick="showImage(1)">2</button>
+                    <button onclick="showImage(2)">3</button>
+                </div>
+                <img src="for1.webp" alt="Ford Mustang Shelby GT350 вид з переду" class="active">
+                <img src="for2.webp" alt="Ford Mustang Shelby GT350 вид з боку">
+                <img src="for3.webp" alt="Ford Mustang Shelby GT350 вид ззаду">
+            </div>
+
+            <h3>Історія створення</h3>
+            <p>Ford Mustang Shelby GT350 був розроблений Кероллом Шелбі, відомим американським гонщиком та виробником автомобілів. У 1965 році Ford співпрацював із Шелбі для створення високопродуктивного спортивного автомобіля, що поєднував би потужність, швидкість та керованість, ставши символом американської автомобільної культури.</p>
+
+            <h3>Розвиток моделі</h3>
+            <p>З моменту свого дебюту GT350 отримав визнання як потужний та маневрений автомобіль. Його двигун V8 забезпечував надзвичайну швидкість, а конструкція кузова була оптимізована для гонок. Протягом кількох років модель продовжувала вдосконалюватися, залишаючись популярною серед автомобілістів та гонщиків.</p>
+
+            <h3>Причини завершення виробництва</h3>
+            <p>Виробництво Ford Mustang Shelby GT350 було завершено через економічні та екологічні зміни. Стандарти викидів та витрати на паливо стали важливими факторами, і Ford був змушений звернути увагу на більш економічні моделі. Однак легенда GT350 залишається в серцях шанувальників класичних автомобілів.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Сайт про класичні автомобілі</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.image-gallery img');
+
+        function showImage(index) {
+            images[currentIndex].classList.remove('active');
+            currentIndex = index;
+            images[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>
